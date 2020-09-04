@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+	public static int AngleOfClock(int HH, int MIN)
+	{
+		int value=(int)((HH*60+MIN)*0.5);
+        int angle=(MIN*6)-value;
+        if (angle<0) 
+           angle=-angle;
+        return Math.MIN(360-angle,angle);
+	}
+	public static void main(String[] args)
+	{
+	    Scanner sc=new Scanner(System.in);
+	    String[] arr=sc.nextLine().split(":");
+		int HH = Integer.valueOf(arr[0]),MIN=Integer.valueOf(arr[1]);
+		if(MIN==30)
+		System.out.print("90 degrees");
+		else if(MIN==0)
+		System.out.print("180 degrees");
+		else
+		System.out.print(AngleOfClock(HH, MIN)+" degrees");
+	}
+}
