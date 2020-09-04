@@ -1,0 +1,25 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char Str[]="I LOVE BEEZ LAB I BELIEVE IT WILL ENCHANCE MY KNOWLEDGE AND CAREER I BELIEVES THAT IT WILL BRING LOTS OF OPPORTUNITIES AND PAVES A WAY TO MY SUCCESS";
+    int count=0;
+    for(int i=0; i < strlen(Str);i++)
+    {
+        if(Str[i]!=' ')
+        count++;
+    }
+
+printf("The Total Number Of characters present in the string : %d",count);
+
+    return 0;
+}

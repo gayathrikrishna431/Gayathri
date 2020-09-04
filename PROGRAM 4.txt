@@ -1,0 +1,21 @@
+import java.util.*;
+public class Hello{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int NUM=sc.nextInt();
+        int count=0;
+        for(int i=1;i<=NUM;i++)
+        {
+            String R=String.valueOf(i);
+            char c[]=R.toCharArray();
+            for(Character Q:C)
+            {
+                if(Q=='1')
+                {
+                    count++;
+                }
+            }
+        }
+        System.out.print(count);
+    }
+}

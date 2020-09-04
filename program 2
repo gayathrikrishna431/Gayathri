@@ -1,0 +1,9 @@
+array=[1,2,4,6,7,8]
+print("THE MISSING NUMBERS FROM ",end="")
+print(min(array),end=" ")
+print("to",end=" ")
+print(max(array),end=" ")
+print("IS ",end="")
+for i in range(min(array),max(array)+1):
+    if i not in array:
+        print(i,end=" ")
